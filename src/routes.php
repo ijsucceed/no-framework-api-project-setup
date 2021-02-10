@@ -22,11 +22,6 @@ $routes = [
     ['PATCH|OPTIONS', '/auth/new-password', 'AuthRequest#resetPassword'],
     ['POST|OPTIONS', '/auth/token/request/email', 'AuthRequest#requestEmailToken'],
     ['POST|OPTIONS', '/auth/token/verify', 'AuthRequest#verifyToken'],
-
-    ['POST|OPTIONS', '/user/update/name', 'UserRequest#updateName'],
-
-    ['GET|OPTIONS', '/bank/list', 'ServiceRequest#bankList'],
-    ['POST|OPTIONS', '/bank/account/resolve', 'ServiceRequest#accountResolve'],
 ];
 
 // Add the routes
